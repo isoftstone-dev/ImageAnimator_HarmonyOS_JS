@@ -1,0 +1,417 @@
+/*基本组件*/
+/*从左向右平移*/
+.xTranslate{
+    animation-name: XTranslate;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes XTranslate {
+    from {
+        transform:translateX(0px);
+    }
+    to {
+        transform:translateX(500px);
+    }
+}
+
+/*从上向下平移*/
+.yTranslate{ 
+    animation-name: YTranslate;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes YTranslate {
+    from {
+        transform:translateY(0px);
+    }
+    to {
+        transform:translateY(500px);
+    }
+}
+
+/*飞入*/
+.translate{  
+    animation-name: Translate;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes Translate {
+    from {
+        transform:translateY(-500px);
+    }
+    to {
+        transform:translateY(0px);
+    }
+}
+
+/*沿X轴旋转*/
+.rotate{
+    animation-name: Rotate;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes Rotate {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/*沿Y轴旋转*/
+.yRotate{
+    animation-name: YRotate;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes YRotate {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+/*缩小*/
+.shrink{
+    animation-name: Shrink;
+    animation-duration: 8000ms;
+    animation-fill-mode:forwards;
+}
+@keyframes Shrink {
+    from {
+        transform:scale(3.0);
+    }
+    to {
+        transform:scale(1.0);
+    }
+}
+
+/*放大*/
+.enlarge{
+    animation-name: Enlarge;
+    animation-duration: 8000ms;
+    animation-fill-mode:forwards;
+}
+@keyframes Enlarge {
+    from {
+        transform:scaleX(1.0);
+    }
+    to {
+        transform:scaleX(3.0);
+    }
+}
+
+/*从左向右淡入*/
+.goInX { 
+    animation-name: GoInX;
+    animation-duration: 8000ms;
+    animation-fill-mode:forwards;
+}
+@keyframes GoInX {
+    from {
+        opacity: 0.0;
+        transform:translateX(0px);
+    }
+    to {
+        opacity: 1.0;
+        transform:translateX(500px);
+    }
+}
+
+/*从上向下淡入*/
+.goInY {
+    animation-name: GoInY;
+    animation-duration: 8000ms;
+    animation-fill-mode:forwards;
+}
+@keyframes GoInY {
+    from {
+        opacity: 0.0;
+        transform:translateY(0px);
+    }
+    to {
+        opacity: 1.0;
+        transform:translateY(500px);
+    }
+}
+
+/*从左向右淡出*/
+.goOutX {  
+    animation-name: GoOutX;
+    animation-duration: 8000ms;
+    animation-fill-mode:forwards;
+}
+@keyframes GoOutX {
+    from {
+        opacity: 1.0;
+        transform:translateX(500px);
+    }
+    to {
+        opacity: 0.0;
+        transform:translateX(0px);
+    }
+}
+
+/*从上向下淡出*/
+.goOutY { 
+    animation-name: GoOutY;
+    animation-duration: 8000ms;
+    animation-fill-mode:forwards;
+}
+@keyframes GoOutY {
+    from {
+        opacity: 1.0;
+        transform:translateY(500px);
+    }
+    to {
+        opacity: 0.0;
+        transform:translateY(0px);
+    }
+}
+
+/*组合动画组件*/
+/*从左向右平移旋转*/
+.xTranslateRotate{
+    animation-name: XTranslateRotate;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes XTranslateRotate {
+    from {
+        transform:translate(0px) rotate(0deg);
+    }
+    to {
+        transform:translate(500px) rotate(360deg);
+    }
+}
+
+/*从上向下平移旋转*/
+.yTranslateRotate{
+    animation-name: YTranslateRotate;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes YTranslateRotate {
+    from {
+        transform:translateY(0px) rotate(0deg);
+    }
+    to {
+        transform:translateY(500px) rotate(360deg);
+    }
+}
+
+/*从左向右平移轴旋转缩小*/
+.xTranslateRotateShrink{
+    animation-name: XTranslateRotateShrink;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes XTranslateRotateShrink {
+    from {
+        transform:translate(0px) rotate(0deg) scale(3.0);
+    }
+    to {
+        transform:translate(500px) rotate(360deg) scale(1.0);
+    }
+}
+
+/*从上向下平移旋转缩小*/
+.yTranslateRotateShrink{
+    animation-name: YTranslateRotateShrink;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes YTranslateRotateShrink {
+    from {
+        transform:translateY(0px) rotate(0deg) scale(3.0);
+    }
+    to {
+        transform:translateY(500px) rotate(360deg) scale(1.0);
+    }
+}
+
+/*从左向右平移轴旋转放大*/
+.xTranslateRotateEnlarge{
+    animation-name: XTranslateRotateEnlarge;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes XTranslateRotateEnlarge {
+    from {
+        transform:translate(0px) rotate(0deg) scale(1.0);
+    }
+    to {
+        transform:translate(500px) rotate(360deg) scale(3.0);
+    }
+}
+
+/*从上向下平移旋转放大*/
+.yTranslateRotateEnlarge{
+    animation-name: YTranslateRotateEnlarge;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes YTranslateRotateEnlarge {
+    from {
+        transform:translateY(0px) rotate(0deg) scale(1.0);
+    }
+    to {
+        transform:translateY(500px) rotate(360deg) scale(3.0);
+    }
+}
+
+/*从左向右平移缩小*/
+.xTranslateShrink{
+    animation-name: XTranslateShrink;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes XTranslateShrink {
+    from {
+        transform:translate(0px) scale(3.0);
+    }
+    to {
+        transform:translate(500px) scale(1.0);
+    }
+}
+
+/*从上向下平移缩小*/
+.yTranslateShrink{
+    animation-name: YTranslateShrink;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes YTranslateShrink {
+    from {
+        transform:translateY(0px) scale(3.0);
+    }
+    to {
+        transform:translateY(500px) scale(1.0);
+    }
+}
+
+
+/*从左向右平移放大*/
+.xTranslateEnlarge{
+    animation-name: XTranslateEnlarge;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes XTranslateEnlarge {
+    from {
+        transform:translate(0px) scale(1.0);
+    }
+    to {
+        transform:translate(500px) scale(3.0);
+    }
+}
+
+/*从上向下平移放大*/
+.yTranslateEnlarge{
+    animation-name: YTranslateEnlarge;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes YTranslateEnlarge {
+    from {
+        transform:translateY(0px) scale(1.0);
+    }
+    to {
+        transform:translateY(500px) scale(3.0);
+    }
+}
+
+/*旋转缩小*/
+.rotateShrink{
+    animation-name: RotateShrink;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes RotateShrink {
+    from {
+        transform:rotate(0deg) scale(3.0);
+    }
+    to {
+        transform:rotate(360deg) scale(1.0);
+    }
+}
+
+/*旋转放大*/
+.rotateEnlarge{
+    animation-name: RotateEnlarge;
+    animation-duration: 8000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes RotateEnlarge {
+    from {
+        transform:rotate(0deg) scale(1.0);
+    }
+    to {
+        transform:rotate(360deg) scale(3.0);
+    }
+}
+
+/*渐变*/
+.opacity{
+    font-size: 50px;
+    animation-name: Opacity;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes Opacity {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+/*渐变式回旋*/
+.rotateOpacity{
+    font-size: 50px;
+    animation-name: RotateOpacity;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes RotateOpacity {
+    from {
+        opacity: 0.1;
+        transform:rotateY(0deg);
+    }
+    to {
+        opacity: 1.0;
+        transform:rotateY(360deg);
+    }
+}
+
+/*渐变式缩放*/
+.scaleOpacity{
+    font-size: 50px;
+    animation-name: ScaleOpacity;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes ScaleOpacity {
+    from {
+        opacity: 0.1;
+        transform:scale(0.0);
+    }
+    to {
+        opacity: 1.0;
+        transform:scale(1.0);
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+{
+  "app": {
+    "bundleName": "com.llew.font.slide.imageanimator",
+    "vendor": "llew",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.WRITE_MEDIA",
+        "reason": "",
+        "usedScene": {
+          "ability": [
+            "com.example.ohosdemo.MainAbility",
+            "com.example.ohosdemo.slice.MainAbilitySlice"
+          ],
+          "when": "always"
+        }
+      }
+    ],
+    "package": "com.llew.font.slide.imageanimator",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.llew.font.slide.imageanimator.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "ImageAnimator",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/imageAnimator/imageAnimator"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}
